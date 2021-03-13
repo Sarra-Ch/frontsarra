@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import logoyez from "../assets/Logo_oyez.png";
 import logout from "../assets/logout.png";
+import profile from "../assets/profile.png";
+import notif from "../assets/notif.png";
 
 const Header = () => {
   return (
@@ -12,6 +14,12 @@ const Header = () => {
 
       <Menu>
         <button>
+          <img src={notif} alt="" />
+        </button>
+        <button>
+          <img src={profile} alt="" />
+        </button>
+        <button>
           <img src={logout} alt="" />
         </button>
       </Menu>
@@ -19,17 +27,21 @@ const Header = () => {
   );
 };
 
-const Menu = styled.button`
+const Menu = styled.div`
+  position: absolute;
+  width: 173px;
+  height: 43px;
+  left: 1245px;
+  top: 27px;
+
+  padding: 0px 0px 100px 420px;
+  justify-items: right;
+
   button {
-    position: absolute;
+    position: relative;
     background: white;
     border: none;
-    height: 58px;
-    border-radius: 25%;
-    width: 36px;
-    left: 1700px;
-    right: 14px;
-    top: 20px;
+    border-radius: 100%;
     outline-style: none;
   }
 

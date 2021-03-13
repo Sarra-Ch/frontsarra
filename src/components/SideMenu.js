@@ -64,7 +64,7 @@ const Menu = styled.nav`
   padding: 100px 10px;
   height: 100vh;
   text-align: right;
- 
+
   position: absolute;
   top: 0;
   left: 0;
@@ -72,26 +72,25 @@ const Menu = styled.nav`
   align-items: flex-start;
 
   a {
-
-    padding: 20px 0px 30px 0px ;
+    padding: 20px 0px 30px 0px;
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
     color: black;
     &:hover {
-    color: white !important;
-    font-size: 90;
-    background-color: #e83952;
-    border-radius: 10px;
-    padding: 5px 5px 25px 5px;
-    width: 400px;
-    height:1%}
-
-  
-   `;
+      color: white !important;
+      font-size: 90;
+      background-color: #d9d7d7;
+      border-radius: 10px;
+      padding: 5px 5px 25px 5px;
+      width: 400px;
+      height: 1%;
+    }
+  }
+`;
 
 export default SideMenu;
