@@ -3,12 +3,20 @@ import styled from "styled-components";
 import Header from "./Header";
 import Main from "./Main";
 import SideMenu from "./SideMenu";
+import Dispo from "../components/pages/Dispo";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <Container>
       <Header />
-      <SideMenu />
+      <Router>
+        <SideMenu />
+        <Switch>
+          <Route path="/dispo" component={Dispo} />
+        </Switch>
+      </Router>
+
       <Main />
     </Container>
   );

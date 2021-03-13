@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const SideMenu = () => {
   return (
@@ -9,13 +10,34 @@ const SideMenu = () => {
       </TitleBox>
 
       <Menu>
-        <a href="/"> Les équipements disponibles </a>
-        <a href="/"> Consulter l’historique des validations </a>
-        <a href="/"> Gérer les utilisateurs </a>
-        <a href="/"> Gérer les demandes </a>
-        <a href="/"> Gérer le matériel disponible </a>
-        <a href="/"> Traçer un équipement </a>
-        <a href="/"> Gérer les réclamations </a>
+        <nav>
+          <ul>
+            <Link to="/dispo">
+              <li>Les équipements disponibles</li>
+            </Link>
+            <Link to="/dispo">
+              <li>Consulter l'historique des validations</li>
+            </Link>
+            <Link to="/dispo">
+              <li>Gérer les utilisateurs</li>
+            </Link>
+            <Link to="/dispo">
+              <li>Gérer les demandes</li>
+            </Link>
+            <Link to="/dispo">
+              <li>Gérer le matériel disponible</li>
+            </Link>
+            <Link to="/dispo">
+              <li>Gérer le matériel disponible</li>
+            </Link>
+            <Link to="/dispo">
+              <li>Localiser un équipement</li>
+            </Link>
+            <Link to="/dispo">
+              <li>Gérer les réclamations</li>
+            </Link>
+          </ul>
+        </nav>
       </Menu>
     </Wrapper>
   );
@@ -71,7 +93,12 @@ const Menu = styled.nav`
   justify-content: right;
   align-items: flex-start;
 
-  a {
+  Link {
+    list-style: none;
+  }
+
+  li {
+    list-style: none;
     padding: 20px 0px 30px 0px;
     font-family: Roboto;
     font-style: normal;
@@ -84,7 +111,7 @@ const Menu = styled.nav`
     &:hover {
       color: white !important;
       font-size: 90;
-      background-color: #d9d7d7;
+      background-color: #e83952;
       border-radius: 10px;
       padding: 5px 5px 25px 5px;
       width: 400px;
