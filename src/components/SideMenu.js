@@ -10,34 +10,30 @@ const SideMenu = () => {
       </TitleBox>
 
       <Menu>
-        <nav>
-          <ul>
-            <Link to="/dispo">
-              <li>Les équipements disponibles</li>
-            </Link>
-            <Link to="/dispo">
-              <li>Consulter l'historique des validations</li>
-            </Link>
-            <Link to="/dispo">
-              <li>Gérer les utilisateurs</li>
-            </Link>
-            <Link to="/dispo">
-              <li>Gérer les demandes</li>
-            </Link>
-            <Link to="/dispo">
-              <li>Gérer le matériel disponible</li>
-            </Link>
-            <Link to="/dispo">
-              <li>Gérer le matériel disponible</li>
-            </Link>
-            <Link to="/dispo">
-              <li>Localiser un équipement</li>
-            </Link>
-            <Link to="/dispo">
-              <li>Gérer les réclamations</li>
-            </Link>
-          </ul>
-        </nav>
+        <a>
+          <Link to="/dispo">Les équipements disponibles</Link>
+        </a>
+        <a>
+          <Link to="/dispo">Consulter l'historique des validations</Link>
+        </a>
+        <a>
+          <Link to="/dispo">Gérer les utilisateurs</Link>
+        </a>
+        <a>
+          <Link to="/dispo">Gérer les demandes</Link>
+        </a>
+        <a>
+          <Link to="/dispo">Gérer le matériel disponible</Link>
+        </a>
+        <a>
+          <Link to="/dispo">Gérer le matériel disponible</Link>
+        </a>
+        <a>
+          <Link to="/dispo">Localiser un équipement</Link>
+        </a>
+        <a>
+          <Link to="/dispo">Gérer les réclamations</Link>
+        </a>
       </Menu>
     </Wrapper>
   );
@@ -83,23 +79,20 @@ const TitleBox = styled.div`
 const Menu = styled.nav`
   display: flex;
   flex-direction: column;
-  padding: 100px 10px;
-  height: 100vh;
+  padding: 10px 10px 0px 20px;
+  top: 15%;
   text-align: right;
 
   position: absolute;
-  top: 0;
-  left: 0;
+  justify-content: space-evenly;
   justify-content: right;
   align-items: flex-start;
 
-  Link {
+  a {
+    text-decoration: none;
+    margin: 0rem;
     list-style: none;
-  }
-
-  li {
-    list-style: none;
-    padding: 20px 0px 30px 0px;
+    padding: 20px 10px 15px 0px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -109,13 +102,11 @@ const Menu = styled.nav`
 
     color: black;
     &:hover {
-      color: white !important;
-      font-size: 90;
-      background-color: #e83952;
+      color: white;
+      background: #e83952;
       border-radius: 10px;
-      padding: 5px 5px 25px 5px;
-      width: 400px;
-      height: 1%;
+      padding: 10px 5px 5px 3px;
+      justify-items: center;
     }
   }
 `;
